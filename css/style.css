@@ -36,7 +36,7 @@ body, html {
     margin-left: auto;
     margin-right: auto;
     width: 32%;
-    padding-top: 16px;
+    padding-top: 18px;
     border-bottom: thin solid rgba(0, 0, 0, 0.500);
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
@@ -58,4 +58,53 @@ body, html {
     font-weight: 600;
     font-size: 12px;
     padding-top: 22px;
+}
+
+@media (max-width: 750px) {
+    .card {
+        background-color: white;
+        border: 1.7px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.700);
+        width: 300px;
+        height: 225px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        z-index: 2;
+    }
+    
+    .card-header {
+        font-family: 'Dosis', sans-serif;
+        font-size: 18px;
+        color: black;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 38%;
+        padding-top: 12px;
+        border-bottom: thin solid rgba(0, 0, 0, 0.500);
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+    
+    .barcode {
+        height: 120px;
+        width: 120px;
+        display: flex;
+        padding-top: 23px;
+        margin-left: auto;
+        margin-right: auto;
+        pointer-events: none;
+    }
+    
+    #copyright {
+        text-align: center;
+        font-family: 'Halant', serif;
+        font-weight: 600;
+        font-size: 10px;
+        padding-top: 20px;
+    }
 }
